@@ -67,6 +67,14 @@ a.bottom {
 	transform: rotate(180deg) translate(50%,0);
 }
 
+img {
+	mix-blend-mode: multiply;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
 section {
 	width: auto;
 	flex-direction: column;
@@ -87,22 +95,12 @@ h2 {
 
 .box {
 	height: 500px;
-	width: 500px;
-	background-image: url("../images/test.jpg");
+
 	border: 1px #fff solid;
 	margin: 15% 0 15% 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.headline-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 10;
 }
 
 /*.center {
