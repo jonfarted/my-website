@@ -71,8 +71,8 @@ a.bottom {
 section {
 	width: auto;
 	flex-direction: column;
-	transition: transform .25s;
-	will-change: transform;
+	transition: height .25s;
+	will-change: height;
 }
 
 h1{
@@ -126,6 +126,14 @@ span {
 	left: 50%;
 	transform: translate(-50%,-50%);
 	z-index: -999;
+}
+
+#overlay {
+	background-color: green;
+	height: 0%;
+	transition: transform .25s;
+	will-change: transform;
+	z-index: 999;
 }
 /*.box {
 	height: 500px;

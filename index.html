@@ -22,8 +22,8 @@
 </a>
 -->
 	<section>
-
-		<div class="project-single row" id="">
+		<div id = "overlay"></div>
+		<div class="project-single row" id="row">
 	    <div class="project-meta">
       	<span><p>Project number</p></span>
       </div>
@@ -37,6 +37,13 @@
 
 
 	</section>
+
+<!-- overlay script -->
+<script>
+	document.getElementById("row").addEventListener("click", function(){
+		document.getElementById("overlay").style.height = '100px';
+	});
+</script>
 <!--<script src="js/skew.js"></script>-->
 </body>
 </html>
