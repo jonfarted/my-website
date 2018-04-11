@@ -7,53 +7,73 @@
 <title>North Memphis</title>
 </head>
 <body>
-<!--
-<a href = "" class = "nav top">
-	Top
-</a>
-<a href = "" class = "nav left">
-	Left
-</a>
-<a href = "" class = "nav right">
-	Right
-</a>
-<a href = "" class = "nav bottom">
-	Bottom
-</a>
--->
-	<section>
-		<div id = "overlay"></div>
-		<div class="project-single row" id="row">
-	    <div class="project-meta">
-      	<span><p>Project number</p></span>
-      </div>
-  		<div class="project-header">
-      	<h2>Project Headline</h2>
-      	<h1>Project Subhead</h1>
-      	<p>Animation</p>
-    	</div>
-    	<div class="img-holder" style="background:url(../images/image1.jpg)"></div>
-    </div>
 
+
+<div id="myNav" class="overlay">
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  	<div class="overlay-content">
+			<div></div>
+  	</div>
+</div>
+
+	<section>
+
+		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
+			<h2>Project Headline</h2>
+			<h1>Project Subhead</h1>
+			<p>Animation</p>
+		</div>
+
+		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
+			<h2>Project Headline</h2>
+			<h1>Project Subhead</h1>
+			<p>Animation</p>
+		</div>
+
+		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
+			<h2>Project Headline</h2>
+			<h1>Project Subhead</h1>
+			<p>Animation</p>
+		</div>
+
+		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
+			<h2>Project Headline</h2>
+			<h1>Project Subhead</h1>
+			<p>Animation</p>
+		</div>
+
+		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
+			<h2>Project Headline</h2>
+			<h1>Project Subhead</h1>
+			<p>Animation</p>
+		</div>
+
+		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
+			<h2>Project Headline</h2>
+			<h1>Project Subhead</h1>
+			<p>Animation</p>
+		</div>
+
+		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
+			<h2>Project Headline</h2>
+			<h1>Project Subhead</h1>
+			<p>Animation</p>
+		</div>
 
 	</section>
 
 <!-- overlay script -->
 <script>
-	document.getElementById("row").addEventListener("click", function(){
-		document.getElementById("overlay").style.height = '100px';
-	});
+	function openNav() {
+	    document.getElementById("myNav").style.width = "100%";
+	}
+
+	function closeNav() {
+	    document.getElementById("myNav").style.width = "0%";
+	}
 </script>
-<!--
-<<script>
-	document.getElementById("row").addEventListener("click", function(){
-		if (document.getElementById("overlay").style.height = '0';){
-				document.getElementById("overlay").style.height = '100px';
-		} else {
-				document.getElementById("overlay").style.height = '0';
-		}
-	});
-</script>
--->
+
+<script src="js/skew.js"></script>
+
 </body>
 </html>

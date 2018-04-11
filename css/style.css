@@ -1,78 +1,11 @@
 body {
 	font-family: 'Work Sans', cursive;
 	background-color: #ffffff;
-	color: #2727e5;
+	color: #000000;
 	height:100%;
 	display: flex;
   align-items: center;
   justify-content: center;
-}
-
-a {
-	color: #2727e5;
-	text-decoration: none;
-
-	/*border-bottom: 4px solid transparent;
-	transition: border-bottom 0.5s;*/
-}
-
-a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #000000;
-    transition: width .3s;
-}
-
-a:hover::after {
-    width: 100%;
-    transition: width .3s;
-}
-
-/*a:hover {
-	border-bottom-color: #2727e5;
-}*/
-
-a.top {
-		position: fixed;
-		z-index: 10;
-		top: 20px;
-		left: 50%;
-		transform: translate(-50%,0);
-}
-
-a.left {
-	position: fixed;
-	z-index: 10;
-	top: 50%;
-	left: 20px;
-	transform-origin: 0 0;
-	transform: rotate(-90deg) translate(-50%,0);
-}
-
-a.right {
-	position: fixed;
-	z-index: 10;
-	top: 50%;
-	right: 20px;
-	transform-origin: 100% 0;
-	transform: rotate(90deg) translate(50%,0);
-}
-
-a.bottom {
-	position: fixed;
-	z-index: 10;
-	bottom: 20px;
-	left: 50%;
-	transform: rotate(180deg) translate(50%,0);
-}
-
-section {
-	width: auto;
-	flex-direction: column;
-	transition: height .25s;
-	will-change: height;
 }
 
 h1{
@@ -96,67 +29,32 @@ h2 {
 	padding: 0;
 }
 
-span {
-	position: absolute;
-  right: 60px;
-  top: -20px;
-  text-align: right;
-  transform: rotate(-90deg);
-  transform-origin: center right;
-	display: block;
-}
-
-.project-meta {
-	position: relative;
-	min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.project-single {
-	padding-bottom: 100px;
-}
-.row{
-	margin-right: -15px;
-	margin-left: -15px;
-}
-
-.img-holder {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	z-index: -999;
-}
-
-#overlay {
-	background-color: green;
-	height: 0%;
-	transition: transform .25s;
+section {
+	width: auto;
+	flex-direction: column;
+	transition: transform .50s;
 	will-change: transform;
-	z-index: 999;
-}
-/*.box {
-	height: 500px;
-
-	border: 1px #fff solid;
-	top: 50%;
-	margin: 50% 0 50% 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
-.center {
-	height:100%;
-	display: flex;
-  align-items: center;
-  justify-content: center;
+.project {
+	padding: 100px;
 }
 
-.nav {
-	display: block;
-	position: fixed;
-	z-index: 10;
-	width: 100%;
-	height: 100%;
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: green;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
