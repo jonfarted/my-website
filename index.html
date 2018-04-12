@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 <title>North Memphis</title>
 </head>
 <body>
@@ -17,63 +17,87 @@
 </div>
 
 	<section>
-
-		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
-			<h2>Project Headline</h2>
-			<h1>Project Subhead</h1>
-			<p>Animation</p>
+		<ul>
+  		<li class="project" onclick="openNav()" id = "">
+				<a>Cherry Tomato</a>
+			</li>
+			<li class="project" onclick="openNav()" id = "">
+				<a>Cucumber</a>
+			</li>
+			<li class="project" onclick="openNav()" id = "">
+				<a>Butternut Squash</a>
+			</li>
+			<li class="project" onclick="openNav()" id = "">
+				<a>Purple Cabbage</a>
+			</li>
+			<li class="project" onclick="openNav()" id = "">
+				<a>Eggplant</a>
+			</li>
+			<li class="project" onclick="openNav()" id = "">
+				<a>Bok Choy</a>
+			</li>
+			<li class="project" onclick="openNav()" id = "">
+				<a>Idaho Potato</a>
+			</li>
+			<li class="project" onclick="openNav()" id = "">
+				<a>Shallot</a>
+			</li>
+		</ul>
+		<!--<div class = "project" onclick="openNav()" id = "">
+			<div class = "project-row">
+				<p class = "number">01</p>
+				<h1>Project Title</h1>
+			</div>
+			<h2>Subtitle</h2>
+			<img src = "images/image1.jpg" alt = "" class = "img">
 		</div>
 
-		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
-			<h2>Project Headline</h2>
-			<h1>Project Subhead</h1>
-			<p>Animation</p>
+		<div class = "project" onclick = "openNav()" id = "">
+			<h1>Project Title</h1>
 		</div>
 
-		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
-			<h2>Project Headline</h2>
-			<h1>Project Subhead</h1>
-			<p>Animation</p>
+		<div class="project" onclick = "openNav()" id = "">
+			<h1>Project Title</h1>
 		</div>
 
-		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
-			<h2>Project Headline</h2>
-			<h1>Project Subhead</h1>
-			<p>Animation</p>
+		<div class="project" onclick = "openNav()" id = "">
+			<h1>Project Title</h1>
 		</div>
 
-		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
-			<h2>Project Headline</h2>
-			<h1>Project Subhead</h1>
-			<p>Animation</p>
+		<div class="project" onclick = "openNav()" id = "">
+			<h1>Project Title</h1>
 		</div>
 
-		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
-			<h2>Project Headline</h2>
-			<h1>Project Subhead</h1>
-			<p>Animation</p>
-		</div>
-
-		<div class="project" style = "cursor: pointer" onclick = "openNav()" id = "">
-			<h2>Project Headline</h2>
-			<h1>Project Subhead</h1>
-			<p>Animation</p>
-		</div>
+		<div class="project" onclick = "openNav()" id = "">
+			<h1>Project Title</h1>
+		</div>-->
 
 	</section>
 
+<img src = "images/image1.jpg" alt = "">
+
+<!--<script src="js/skew.js"></script>-->
 <!-- overlay script -->
 <script>
 	function openNav() {
-	    document.getElementById("myNav").style.width = "100%";
+	    document.getElementById("myNav").style.height = "100%";
 	}
 
 	function closeNav() {
-	    document.getElementById("myNav").style.width = "0%";
+	    document.getElementById("myNav").style.height = "0%";
 	}
 </script>
+<!--
+<script>
+	function openNav() {
+	    document.getElementById("myNav").style.display = "block",
+			document.getElementById("myNav").style.opacity = "1";
+	}
 
-<script src="js/skew.js"></script>
-
+	function closeNav() {
+	    document.getElementById("myNav").style.display = "none",
+			document.getElementById("myNav").style.opacity = "0";
+	}
+</script>-->
 </body>
 </html>
