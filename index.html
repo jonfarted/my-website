@@ -18,103 +18,88 @@
 
 	<section>
 		<ul>
-  		<li class="project" onclick="openNav()" id = "">
-				<a>Cherry Tomato</a>
+  		<li class="project"  id="project-button">
+				<a class="title">Cherry Tomato</a>
 				<p class="number">01</p>
 				<img src="images/image1.jpg" alt="image" class="img">
 			</li>
-			<li class="project" onclick="openNav()" id = "">
-				<a>Cucumber</a>
+			<li class="project"  id="project-button">
+				<a class="title">Cucumber</a>
 				<p class="number">02</p>
 				<img src="images/image2.jpg" alt="image" class="img">
 			</li>
-			<li class="project" onclick="openNav()" id = "">
-				<a>Butternut Squash</a>
+			<li class="project"  id="project-button">
+				<a class="title">Butternut Squash</a>
 				<p class="number">03</p>
 				<img src="images/image3.jpg" alt="image" class="img">
 			</li>
-			<li class="project" onclick="openNav()" id = "">
-				<a>Purple Cabbage</a>
+			<li class="project"  id="project-button">
+				<a class="title">Purple Cabbage</a>
 				<p class="number">04</p>
 				<img src="images/image1.jpg" alt="image" class="img">
 			</li>
-			<li class="project" onclick="openNav()" id = "">
+			<li class="project"  id="project-button">
+				<a class="title">Eggplant</a>
 				<p class="number">05</p>
-				<a>Eggplant</a>
 				<img src="images/image2.jpg" alt="image" class="img">
 			</li>
-			<li class="project" onclick="openNav()" id = "">
-				<a>Bok Choy</a>
+			<li class="project"  id="project-button">
+				<a class="title">Bok Choy</a>
 				<p class="number">06</p>
 				<img src="images/image3.jpg" alt="image" class="img">
 			</li>
-			<li class="project" onclick="openNav()" id = "">
-				<a>Idaho Potato</a>
+			<li class="project"  id="project-button">
+				<a class="title">Idaho Potato</a>
 				<p class="number">07</p>
 				<img src="images/image1.jpg" alt="image" class="img">
 			</li>
-			<li class="project" onclick="openNav()" id = "">
-				<a>Shallot</a>
+			<li class="project"  id="project-button">
+				<a class="title">Shallot</a>
 				<p class="number">08</p>
 				<img src="images/image2.jpg" alt="image" class="img">
 			</li>
 		</ul>
-		<!--<div class = "project" onclick="openNav()" id = "">
-			<div class = "project-row">
-				<p class = "number">01</p>
-				<h1>Project Title</h1>
-			</div>
-			<h2>Subtitle</h2>
-			<img src = "images/image1.jpg" alt = "" class = "img">
+		<div class="bio">
 		</div>
-
-		<div class = "project" onclick = "openNav()" id = "">
-			<h1>Project Title</h1>
-		</div>
-
-		<div class="project" onclick = "openNav()" id = "">
-			<h1>Project Title</h1>
-		</div>
-
-		<div class="project" onclick = "openNav()" id = "">
-			<h1>Project Title</h1>
-		</div>
-
-		<div class="project" onclick = "openNav()" id = "">
-			<h1>Project Title</h1>
-		</div>
-
-		<div class="project" onclick = "openNav()" id = "">
-			<h1>Project Title</h1>
-		</div>-->
 
 	</section>
 
+	<div id="index-btn" class="btn">
+	  	<a href="" onclick="scrollTop()">Top &uarr;</a>
+	</div>
 <!--<img class="hero" src="images/image1.jpg" alt ="">-->
 
 <script src="js/skew.js"></script>
-<!-- overlay script -->
+
 <script>
+
+function openNav (){
+	document.getElementById("myNav").style.height="100%"
+}
+
+document.getElementsByClassName("project").onclick = function() {
+	openNav();
+};
+
+/*
 	function openNav() {
-	    document.getElementById("myNav").style.height="100%";
+	  document.getElementById("myNav").style.height="100%";
 	}
 
 	function closeNav() {
-	    document.getElementById("myNav").style.height="0%";
+	  document.getElementById("myNav").style.height="0%";
 	}
 
+	function scrollToTop(){
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+
+	function toBottom(){
+		window.scrollTo(0, document.body.scrollHeight);
+	}
+*/
 </script>
-<!--
-<script>
-	function openNav() {
-	    document.getElementById("myNav").style.display = "block",
-			document.getElementById("myNav").style.opacity = "1";
-	}
 
-	function closeNav() {
-	    document.getElementById("myNav").style.display = "none",
-			document.getElementById("myNav").style.opacity = "0";
-	}
-</script>-->
 </body>
 </html>
