@@ -6,100 +6,76 @@
 <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 <title>North Memphis</title>
 </head>
-<body>
+<body id="loader">
+  <footer class="navbar">
+    <div class="btn bio">
+      <p>JONATHAN M<sup>c</sup>GHEE</p>
+    </div>
+    <div class="btn top"> <p>&uarr;</p>
+    </div>
+  </footer>
+  <div class="content">
 
+    <div class="project">
+      <img src="images/image1.jpg" srcset="" alt="">
+    </div>
+    <div class="project">
+      <img src="images/image1.jpg" srcset="" alt="">
+    </div>
+    <div class="project">
+      <img src="images/image1.jpg" srcset="" alt="">
+    </div>
+    <div class="project">
+      <img src="images/image1.jpg" srcset="" alt="">
+    </div>
+    <div class="project">
+      <img src="images/image1.jpg" srcset="" alt="">
+    </div>
+    <div class="project">
+      <img src="images/image1.jpg" srcset="" alt="">
+    </div>
+    <div class="project">
+      <img src="images/image1.jpg" srcset="" alt="">
+    </div>
+    <!--<div class="work">
+    	<ul>
+    		<li class="project"  id="">
+  				<a class="title">Snap Chat</a></br>Animation
+  				<img src="images/image1.jpg" alt="image" class="img">
+  			</li>
+  			<li class="project"  id="">
+  				<a class="title">Haus</a></br>Animation
+  				<img src="images/image2.jpg" alt="image" class="img">
+  			</li>
+  			<li class="project"  id="">
+  				<a class="title">Banana Boat</a></br>Design
+  				<img src="images/image3.jpg" alt="image" class="img">
+  			</li>
+  			<li class="project"  id="">
+  				<a class="title">Pop Research</a></br>Animation Illustration Design
+  				<img src="images/image1.jpg" alt="image" class="img">
+  			</li>
+  			<li class="project"  id="">
+  				<a class="title">Black Label Bacon</a></br>Animation Design
+  				<img src="images/image2.jpg" alt="image" class="img">
+  			</li>
+  			<li class="project"  id="">
+  				<a class="title">Jet Edge</a></br>Design
+  				<img src="images/image3.jpg" alt="image" class="img">
+  			</li>
+  		</ul>
+    </div>
+    <div class="">-->
 
-<div id="myNav" class="overlay">
-  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  	<div class="overlay-content">
-			<div></div>
-  	</div>
-</div>
+  </div>
+  <script>
+    function preLoader() {
+      javascript:document.getElementById('loader').style.visibility="visible";
+      javascript:document.getElementById('loader').style.opacity=1;
+    }
 
-	<section>
-		<ul>
-  		<li class="project"  id="project-button">
-				<a class="title">Cherry Tomato</a>
-				<p class="number">01</p>
-				<img src="images/image1.jpg" alt="image" class="img">
-			</li>
-			<li class="project"  id="project-button">
-				<a class="title">Cucumber</a>
-				<p class="number">02</p>
-				<img src="images/image2.jpg" alt="image" class="img">
-			</li>
-			<li class="project"  id="project-button">
-				<a class="title">Butternut Squash</a>
-				<p class="number">03</p>
-				<img src="images/image3.jpg" alt="image" class="img">
-			</li>
-			<li class="project"  id="project-button">
-				<a class="title">Purple Cabbage</a>
-				<p class="number">04</p>
-				<img src="images/image1.jpg" alt="image" class="img">
-			</li>
-			<li class="project"  id="project-button">
-				<a class="title">Eggplant</a>
-				<p class="number">05</p>
-				<img src="images/image2.jpg" alt="image" class="img">
-			</li>
-			<li class="project"  id="project-button">
-				<a class="title">Bok Choy</a>
-				<p class="number">06</p>
-				<img src="images/image3.jpg" alt="image" class="img">
-			</li>
-			<li class="project"  id="project-button">
-				<a class="title">Idaho Potato</a>
-				<p class="number">07</p>
-				<img src="images/image1.jpg" alt="image" class="img">
-			</li>
-			<li class="project"  id="project-button">
-				<a class="title">Shallot</a>
-				<p class="number">08</p>
-				<img src="images/image2.jpg" alt="image" class="img">
-			</li>
-		</ul>
-		<div class="bio">
-		</div>
-
-	</section>
-
-	<div id="index-btn" class="btn">
-	  	<a href="" onclick="scrollTop()">Top &uarr;</a>
-	</div>
-<!--<img class="hero" src="images/image1.jpg" alt ="">-->
-
-<script src="js/skew.js"></script>
-
-<script>
-
-function openNav (){
-	document.getElementById("myNav").style.height="100%"
-}
-
-document.getElementsByClassName("project").onclick = function() {
-	openNav();
-};
-
-/*
-	function openNav() {
-	  document.getElementById("myNav").style.height="100%";
-	}
-
-	function closeNav() {
-	  document.getElementById("myNav").style.height="0%";
-	}
-
-	function scrollToTop(){
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-	}
-
-	function toBottom(){
-		window.scrollTo(0, document.body.scrollHeight);
-	}
-*/
-</script>
+    setTimeout(function() { preLoader(); }, 300);
+  </script>
 
 </body>
 </html>
