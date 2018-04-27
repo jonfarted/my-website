@@ -7,13 +7,12 @@
 <title>North Memphis</title>
 </head>
 <body id="loader">
-  <footer class="navbar">
-    <div class="btn bio">
-      <p>JONATHAN M<sup>c</sup>GHEE</p>
-    </div>
-    <div class="btn top"> <p>&uarr;</p>
-    </div>
-  </footer>
+  <div class="button info">
+    <a href="home">JONATHAN M<sup>c</sup>GHEE</a>
+  </div>
+  <div class="button top">
+    <a href="#" onclick="scrollToTop();return false">&uarr;</a>
+  </div>
   <div class="content">
 
     <div class="project">
@@ -69,6 +68,15 @@
 
   </div>
   <script>
+
+  function scrollToTop() {
+  		var position = document.body.scrollTop || document.documentElement.scrollTop;
+  		if (position){
+  			window.scrollBy(0,-Math.max(10, Math.floor(position / 10)));
+  			scrollAnimation=setTimeout('scrollToTop()',10);
+  		}
+  		else clearTimeout(scrollAnimation);
+  	}
     function preLoader() {
       javascript:document.getElementById('loader').style.visibility="visible";
       javascript:document.getElementById('loader').style.opacity=1;

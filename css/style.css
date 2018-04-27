@@ -4,7 +4,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	cursor: url(../images/cursor.png),auto;
 	transition: all 0.2s ease;
+	height:100%;
 }
+
+
 
 
 /*img {
@@ -14,12 +17,6 @@ body {
 	transform: translate(-50%,-50%);
 	z-index: -1;
 }*/
-
-ul {
-}
-
-li {
-}
 
 p {
 }
@@ -47,37 +44,46 @@ sub {
 	transition: all 1s ease;
 	will-change: opacity;
 }
-.top {
-	right: 0;
-}
 
-.content {
-	margin: 0 20px 0 20px;
-}
+.button {
+text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+	position: fixed;
+	font-size: 3.5em;
 
-.navbar {
-	overflow: hidden;
-  position: fixed;
-	font-size: 4em;
-  bottom: 0;
-  width: 100%;
+	width: 100%;
 	transform: translateZ(0);
-  -webkit-transform: translateZ(0);
+	-webkit-transform: translateZ(0);
 }
 
-.btn p {
+.button a {
+  display: block;
+  text-align: center;
+  padding: 0 20px 0 20px;
+  text-decoration: none;
 	font-weight: 400;
 	text-transform: ;
 	color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
 	transition: all 0.2s ease;
 	cursor: url(../images/pointer.png),pointer;
 }
 
-.btn p:hover {
+.button a:hover {
 	color: black;
 	-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 	transition: all 0.2s ease;
+}
+
+.top{
+	bottom: 0;
+}
+
+.content {
+	overflow: hidden;
+	margin: 0 20px 0 20px;
 }
